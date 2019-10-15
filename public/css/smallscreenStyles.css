@@ -2,8 +2,12 @@
 
 .centered-form__box {
     width:80%;
-    height:60%;
+    height:400px;
     font-size: 200%    
 }
 
 /* Chat Styles */
+.centered-form__box h2 {
+    text-align: center;
+    font-family: Arial Rounded MT
+}
