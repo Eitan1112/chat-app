@@ -1,3 +1,8 @@
+/* General Styling */
+body {
+    width: 100%;
+}
+
 /* Join Page Styles*/
 
 .centered-form__box {
@@ -11,3 +16,7 @@
     text-align: center;
     font-family: Arial Rounded MT
 }
+
+.chat__sidebar {
+    width: 0px
+} 

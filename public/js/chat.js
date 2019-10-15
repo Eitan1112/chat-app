@@ -10,7 +10,6 @@ const messageTemplate = document.getElementById('message-template').innerHTML
 const locationTemplate = document.getElementById('location-template').innerHTML
 const sidebarTemplate = document.querySelector('#sidebar-template').innerHTML
 
-//const { username, room } = Qs.parse(location.search, { ignoreQueryPrefix: true })
 const urlParams = new URLSearchParams(window.location.search);
 const username = urlParams.get('username');
 const room = urlParams.get('room');
