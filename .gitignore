@@ -1,1 +1,3 @@
 node_modules
+public/js/mustache.min.js
+public/js/moment.min.js
