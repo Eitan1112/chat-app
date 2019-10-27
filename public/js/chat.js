@@ -59,7 +59,7 @@ socket.on('locationMessage', (location) => {
     autoscroll()
 })
 
-socket.on('roomData', ({ room, users}) => {
+socket.on('roomData', ({ room, users }) => {
     const html = Mustache.render(sidebarTemplate, {
         room,
         users
@@ -90,7 +90,9 @@ document.querySelector('#send-location').addEventListener('click', () => {
         return alert('Geolocation is not supported.')
     }
     $sendLocationButton.setAttribute('disabled', 'disabled')
+    console.log('Trying to fire')
     navigator.geolocation.getCurrentPosition((position) => {
+        console.log('Fired')
         socket.emit('sendLocation', {
             latitude: position.coords.latitude,
             longitude: position.coords.longitude
